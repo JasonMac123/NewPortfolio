@@ -12,9 +12,10 @@ const Profile = () => {
             src={JasonPhoto}
             alt="Profile picture of Jason"
             quality={90}
-            width={300}
-            height={300}
+            width={400}
+            height={400}
             priority={true}
+            className="h-80 w-80 rounded-full border-[0.1rem] object-cover border-gray-400 shadow-lg"
           />
         </div>
       </div>
