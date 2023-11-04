@@ -8,7 +8,14 @@ const Profile = () => {
     <section>
       <div className="flex items-center justify-center">
         <div>
-          <Image src={JasonPhoto} alt="Profile picture of Jason" />
+          <Image
+            src={JasonPhoto}
+            alt="Profile picture of Jason"
+            quality={90}
+            width={300}
+            height={300}
+            priority={true}
+          />
         </div>
       </div>
     </section>
