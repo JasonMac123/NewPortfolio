@@ -37,7 +37,7 @@ const Profile = () => {
       </div>
       <ProfileDescription />
       <motion.div
-        className="flex flex-col sm:flex-row justify-center items-center gap-2 px-4 text-lg font-medium"
+        className="flex flex-col sm:flex-row justify-center items-center gap-4 px-4 text-lg font-medium"
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.2 }}
@@ -53,15 +53,15 @@ const Profile = () => {
           />
         </Link>
         <a
-          href="resume.creddle.io/resume/4ubkmscygjr"
-          className="bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer"
+          href="http://resume.creddle.io/resume/4ubkmscygjr"
+          className="bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer hover:text-white"
         >
           Online Resume
         </a>
         <a
           href="/Jason-Mac-Resume-Nov2023.pdf"
           download
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer hover:text-white"
         >
           Download Resume{" "}
           <AiOutlineDownload
@@ -71,7 +71,7 @@ const Profile = () => {
         </a>
         <a
           href="https://github.com/JasonMac123"
-          className="bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer"
+          className="bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer hover:text-white"
         >
           <AiFillGithub size={30} />
         </a>
