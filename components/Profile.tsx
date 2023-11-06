@@ -5,6 +5,9 @@ import ProfileDescription from "./ProfileDescription";
 import JasonPhoto from "../public/images/JasonPhoto.jpg";
 
 import { motion } from "framer-motion";
+import { GrContact } from "react-icons/gr";
+import { AiFillGithub, AiOutlineDownload } from "react-icons/ai";
+import Link from "next/link";
 
 const Profile = () => {
   return (
@@ -30,6 +33,29 @@ const Profile = () => {
         </motion.div>
       </div>
       <ProfileDescription />
+      <div>
+        <Link
+          href="#contact"
+          className="bg-neutral-800 px-7 text-white py-3 flex items-center gap-2 rounded-full"
+        >
+          Contact Me <GrContact />
+        </Link>
+        <a
+          href="resume.creddle.io/resume/4ubkmscygjr"
+          className="bg-white px-7 py-3 flex items-center gap-2 rounded-full"
+        >
+          Online Resume Link
+        </a>
+        <a className="bg-white px-7 py-3 flex items-center gap-2 rounded-full">
+          Download Resume <AiOutlineDownload />
+        </a>
+        <a
+          href="https://github.com/JasonMac123"
+          className="bg-white px-7 py-3 flex items-center gap-2 rounded-full"
+        >
+          <AiFillGithub />
+        </a>
+      </div>
     </section>
   );
 };
