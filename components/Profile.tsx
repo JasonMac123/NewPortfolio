@@ -54,14 +54,14 @@ const Profile = () => {
         </Link>
         <a
           href="http://resume.creddle.io/resume/4ubkmscygjr"
-          className="bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer hover:text-white"
+          className="bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer hover:border hover:border-black"
         >
           Online Resume
         </a>
         <a
           href="/Jason-Mac-Resume-Nov2023.pdf"
           download
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer hover:text-white"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer hover:border hover:border-black"
         >
           Download Resume{" "}
           <AiOutlineDownload
@@ -71,7 +71,7 @@ const Profile = () => {
         </a>
         <a
           href="https://github.com/JasonMac123"
-          className="bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer hover:text-white"
+          className="bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer hover:border hover:border-black"
         >
           <AiFillGithub size={30} />
         </a>
