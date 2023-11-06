@@ -3,11 +3,20 @@
 import Image from "next/image";
 import JasonPhoto from "../public/images/JasonPhoto.jpg";
 
+import { motion } from "framer-motion";
+
 const Profile = () => {
   return (
     <section>
       <div className="flex items-center justify-center">
-        <div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            type: "tween",
+            duration: 0.4,
+          }}
+        >
           <Image
             src={JasonPhoto}
             alt="Profile picture of Jason"
@@ -17,7 +26,7 @@ const Profile = () => {
             priority={true}
             className="h-80 w-80 rounded-full border-[0.1rem] object-cover border-gray-400 shadow-lg"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
