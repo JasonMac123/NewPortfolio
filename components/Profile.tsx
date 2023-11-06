@@ -25,7 +25,7 @@ const Profile = () => {
             width={400}
             height={400}
             priority={true}
-            className="h-80 w-80 rounded-full border-[0.1rem] object-cover border-gray-400 shadow-lg"
+            className="h-40 w-40 sm:h-60 sm:w-60 lg:w-80 lg:h-80 rounded-full border-[0.1rem] object-cover border-gray-400 shadow-lg"
           />
         </motion.div>
       </div>
