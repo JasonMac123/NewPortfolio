@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import ProfileDescription from "./ProfileDescription";
 import JasonPhoto from "../public/images/JasonPhoto.jpg";
 
 import { motion } from "framer-motion";
@@ -28,6 +29,7 @@ const Profile = () => {
           />
         </motion.div>
       </div>
+      <ProfileDescription />
     </section>
   );
 };
