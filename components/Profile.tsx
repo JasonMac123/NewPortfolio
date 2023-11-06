@@ -44,9 +44,13 @@ const Profile = () => {
       >
         <Link
           href="#contact"
-          className="bg-neutral-800 px-7 text-white py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-neutral-800 px-7 text-white py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
-          Contact Me <AiFillContacts color="white" />
+          Contact Me{" "}
+          <AiFillContacts
+            color="white"
+            className="group-hover:translate-x-1 group-hover:scale-110 transition"
+          />
         </Link>
         <a
           href="resume.creddle.io/resume/4ubkmscygjr"
