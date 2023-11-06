@@ -4,7 +4,7 @@ import Image from "next/image";
 import ProfileDescription from "./ProfileDescription";
 import JasonPhoto from "../public/images/JasonPhoto.jpg";
 
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 import {
   AiFillContacts,
   AiFillGithub,
@@ -36,7 +36,12 @@ const Profile = () => {
         </motion.div>
       </div>
       <ProfileDescription />
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-2 px-4 text-lg font-medium">
+      <motion.div
+        className="flex flex-col sm:flex-row justify-center items-center gap-2 px-4 text-lg font-medium"
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.2 }}
+      >
         <Link
           href="#contact"
           className="bg-neutral-800 px-7 text-white py-3 flex items-center gap-2 rounded-full"
@@ -58,7 +63,7 @@ const Profile = () => {
         >
           <AiFillGithub size={30} />
         </a>
-      </div>
+      </motion.div>
     </section>
   );
 };
