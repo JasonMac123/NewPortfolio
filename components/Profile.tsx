@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const Profile = () => {
   return (
-    <section>
+    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
       <div className="flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
