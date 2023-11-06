@@ -54,16 +54,16 @@ const Profile = () => {
         </Link>
         <a
           href="resume.creddle.io/resume/4ubkmscygjr"
-          className="bg-white px-7 py-3 flex items-center gap-2 rounded-full"
+          className="bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
           Online Resume
         </a>
-        <a className="bg-white px-7 py-3 flex items-center gap-2 rounded-full">
+        <a className="bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition">
           Download Resume <AiOutlineDownload size={20} />
         </a>
         <a
           href="https://github.com/JasonMac123"
-          className="bg-white px-7 py-3 flex items-center gap-2 rounded-full"
+          className="bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
           <AiFillGithub size={30} />
         </a>
