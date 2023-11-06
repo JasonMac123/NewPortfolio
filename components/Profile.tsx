@@ -44,7 +44,7 @@ const Profile = () => {
       >
         <Link
           href="#contact"
-          className="group bg-neutral-800 px-7 text-white py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-neutral-800 px-7 text-white py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer"
         >
           Contact Me{" "}
           <AiFillContacts
@@ -54,16 +54,20 @@ const Profile = () => {
         </Link>
         <a
           href="resume.creddle.io/resume/4ubkmscygjr"
-          className="bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer"
         >
           Online Resume
         </a>
-        <a className="bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition">
-          Download Resume <AiOutlineDownload size={20} />
+        <a className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer">
+          Download Resume{" "}
+          <AiOutlineDownload
+            size={20}
+            className="group-hover:translate-y-1 transition"
+          />
         </a>
         <a
           href="https://github.com/JasonMac123"
-          className="bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer"
         >
           <AiFillGithub size={30} />
         </a>
