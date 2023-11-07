@@ -1,7 +1,13 @@
 "use client";
 
+import SectionTitle from "./SectionTitle";
+
 const Projects = () => {
-  return <section></section>;
+  return (
+    <section>
+      <SectionTitle>My Projects</SectionTitle>
+    </section>
+  );
 };
 
 export default Projects;
