@@ -1,10 +1,17 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 import SectionTitle from "./SectionTitle";
 
 const About = () => {
   return (
-    <section className="mb-28 max-w-[50rem] text-center leading-6 sm:mb-40">
+    <motion.section
+      className="mb-28 max-w-[50rem] text-center leading-6 sm:mb-40"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.3 }}
+    >
       <SectionTitle>About Me</SectionTitle>
       <p className="mb-3 sm:text-md md:text-xl">
         I graduated with a degree in{" "}
@@ -31,7 +38,7 @@ const About = () => {
         coding then you can probably find me playing volleyball or at a sports
         game.
       </p>
-    </section>
+    </motion.section>
   );
 };
 
