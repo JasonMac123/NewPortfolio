@@ -1,9 +1,11 @@
 "use client";
 
+import SectionTitle from "./SectionTitle";
+
 const About = () => {
   return (
     <section className="mb-28 max-w-[50rem] text-center leading-6 sm:mb-40">
-      <h2 className="text-3xl font-medium capitalize mb-8">About me</h2>
+      <SectionTitle>About Me</SectionTitle>
       <p className="mb-3 sm:text-md md:text-xl">
         I graduated with a degree in{" "}
         <span className="font-medium">Chemistry</span>, after spending a year in
