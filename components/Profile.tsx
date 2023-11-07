@@ -83,7 +83,7 @@ const Profile = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
       >
-        <hr className="my-28 border-dotted border-t-[5px] border-gray-400 w-40 sm:w-96" />
+        <hr className="mt-4 mb-28 sm:my-28 border-dotted border-t-[5px] border-gray-400 w-40 sm:w-96" />
       </motion.div>
     </>
   );

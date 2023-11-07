@@ -2,22 +2,29 @@
 
 const About = () => {
   return (
-    <section>
-      <h2>About me</h2>
-      <p>
-        I graduated with a degree in <span>Chemistry</span>, after spending a
-        year in the industry. I decided to pursue programming. I{" "}
-        <span>
+    <section className="mb-28 max-w-[50rem] text-center leading-6 sm:mb-40">
+      <h2 className="text-3xl font-medium capitalize mb-8">About me</h2>
+      <p className="mb-3 sm:text-md md:text-xl">
+        I graduated with a degree in{" "}
+        <span className="font-medium">Chemistry</span>, after spending a year in
+        the industry. I decided to pursue programming. I{" "}
+        <span className="font-medium">
           learned and developed my skills in full-stack web developing
         </span>{" "}
         after enrolling in Lighthouse Labs. The reason why I pursued programming
-        was that I loved creative aspect of turning my ideas into software or
-        websites and the puzzle/problem solving side of programming. My core web
+        was that{" "}
+        <span className="italic">
+          I loved the creative aspect of turning my ideas into software or
+          websites
+        </span>{" "}
+        and the puzzle/problem solving side of programming. My core web
         development skills is{" "}
-        <span>React, typescript, javascript, HTML, and CSS</span>. I am familiar
-        with Java and .NET.
+        <span className="font-bold">
+          React, typescript, javascript, HTML, and CSS
+        </span>
+        . I am familiar with <span className="font-medium">Java and .NET</span>.
       </p>
-      <p>
+      <p className="sm:text-md md:text-xl">
         I am always looking to learn and develop my skills, but if I&apos;m not
         coding then you can probably find me playing volleyball or at a sports
         game.
