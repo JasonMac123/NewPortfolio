@@ -1,9 +1,10 @@
 "use client";
 
-import SectionTitle from "./SectionTitle";
+import SectionTitle from "../SectionTitle";
 import AniSharePhoto from "../public/images/AniShare.jpg";
 import AnimalPalPhoto from "../public/images/AnimalPal.jpg";
 import LookOfJapanPhoto from "../public/images/LookOfJapan.jpg";
+import Project from "./Project";
 
 const projectData = [
   {
@@ -29,12 +30,17 @@ const projectData = [
   },
 ];
 
-const Projects = () => {
+const ProjectList = () => {
   return (
     <section>
       <SectionTitle>My Projects</SectionTitle>
+      <div>
+        {projectData.map((project, i) => {
+          return <Project key={i} />;
+        })}
+      </div>
     </section>
   );
 };
 
-export default Projects;
+export default ProjectList;
