@@ -6,7 +6,7 @@ import AnimalPalPhoto from "../public/images/AnimalPal.jpg";
 import LookOfJapanPhoto from "../public/images/LookOfJapan.jpg";
 import Project from "./Project";
 
-const projectData = [
+export const projectData = [
   {
     title: "Animal-Pals",
     description:
@@ -36,7 +36,7 @@ const ProjectList = () => {
       <SectionTitle>My Projects</SectionTitle>
       <div>
         {projectData.map((project, i) => {
-          return <Project key={i} />;
+          return <Project key={project.title} {...project} />;
         })}
       </div>
     </section>
