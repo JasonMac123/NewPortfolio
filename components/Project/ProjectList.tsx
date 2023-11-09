@@ -1,9 +1,9 @@
 "use client";
 
 import SectionTitle from "../SectionTitle";
-import AniSharePhoto from "../public/images/AniShare.jpg";
-import AnimalPalPhoto from "../public/images/AnimalPal.jpg";
-import LookOfJapanPhoto from "../public/images/LookOfJapan.jpg";
+import AniSharePhoto from "/public/images/AniShare.jpg";
+import AnimalPalPhoto from "/public/images/AnimalPal.jpg";
+import LookOfJapanPhoto from "/public/images/LookOfJapan.jpg";
 import Project from "./Project";
 
 export const projectData = [
