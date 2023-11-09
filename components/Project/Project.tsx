@@ -7,7 +7,7 @@ type ProjectProps = (typeof projectData)[number];
 
 const Project = ({ title, description, tags, image }: ProjectProps) => {
   return (
-    <section className="bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem]">
+    <section className="bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[22rem]">
       <div className="py-4 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:w-1/2 flex flex-col h-full">
         <h3 className="text-2xl font-semibold">{title}</h3>
         <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
@@ -27,7 +27,7 @@ const Project = ({ title, description, tags, image }: ProjectProps) => {
       <Image
         src={image}
         alt={"Project Photo"}
-        className="absolute top-8 -right-40 w-[28rem] rounded-t-lg shadow-lg"
+        className="absolute top-8 -right-40 w-[28rem] rounded-t-lg shadow-lg h-full object-cover"
       />
     </section>
   );
