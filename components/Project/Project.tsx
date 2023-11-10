@@ -3,8 +3,7 @@
 import Image from "next/image";
 import { projectData } from "./ProjectList";
 
-import { useScroll } from "framer-motion";
-import { motion } from "framer-motion";
+import { useScroll, motion, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 type ProjectProps = (typeof projectData)[number];
@@ -16,13 +15,15 @@ const Project = ({ title, description, tags, image }: ProjectProps) => {
     target: ref,
     offset: ["0 1", "1.3 1"],
   });
+  const upScaleScroll = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
+  const upScaleOpacity = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
     <motion.div
       ref={ref}
       style={{
-        scale: scrollYProgress,
-        opacity: scrollYProgress,
+        scale: upScaleScroll,
+        opacity: upScaleOpacity,
       }}
       className="mb-3 sm:mb-8 last:mb-0"
     >
