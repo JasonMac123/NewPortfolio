@@ -33,7 +33,7 @@ export const projectData = [
 
 const ProjectList = () => {
   return (
-    <section>
+    <section id="projects" className="scroll-mt-28">
       <SectionTitle>My Projects</SectionTitle>
       <div>
         {projectData.map((project) => {
