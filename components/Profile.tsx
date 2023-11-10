@@ -4,7 +4,7 @@ import Image from "next/image";
 import ProfileDescription from "./ProfileDescription";
 import JasonPhoto from "../public/images/JasonPhoto.jpg";
 
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import {
   AiFillContacts,
   AiFillGithub,
