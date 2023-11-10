@@ -56,6 +56,7 @@ const Header = () => {
                   section === link.name ? "text-gray-950" : ""
                 }`}
                 href={link.section}
+                onClick={() => setSection(link.name)}
               >
                 {link.name}
                 {link.name === section && (
