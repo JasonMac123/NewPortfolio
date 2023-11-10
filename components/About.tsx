@@ -7,10 +7,11 @@ import SectionTitle from "./SectionTitle";
 const About = () => {
   return (
     <motion.section
-      className="mb-28 max-w-[50rem] text-center leading-6 sm:mb-40"
+      className="mb-28 max-w-[50rem] text-center leading-6 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.3 }}
+      id="about"
     >
       <SectionTitle>About Me</SectionTitle>
       <p className="mb-3 sm:text-md md:text-xl">
