@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
+import { useState } from "react";
+
 export const links = [
   {
     name: "Home",
@@ -31,6 +33,8 @@ export const links = [
 ];
 
 const Header = () => {
+  const [section, setSection] = useState("Home");
+
   return (
     <header className="z-50 relative">
       <motion.div
@@ -42,16 +46,21 @@ const Header = () => {
         <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 font-medium text-gray-600 sm:w-[initial] sm:flex-nowrap sm:gap-3">
           {links.map((link) => (
             <motion.li
-              className="h-3/4 flex items-center justify-center"
+              className="h-3/4 flex items-center justify-center relative"
               key={link.section}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
             >
               <Link
-                className="flex w-full items-center justify-center px-3 py-1 hover:text-gray-800 transition"
+                className={`flex w-full items-center justify-center px-3 py-1 hover:text-gray-800 transition ${
+                  section === link.name ? "text-gray-950" : ""
+                }`}
                 href={link.section}
               >
                 {link.name}
+                {link.name === section && (
+                  <span className="bg-gray-100 rounded-full absolute inset-0 -z-10"></span>
+                )}
               </Link>
             </motion.li>
           ))}
