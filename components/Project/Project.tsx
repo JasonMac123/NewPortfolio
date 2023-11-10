@@ -27,7 +27,7 @@ const Project = ({ title, description, tags, image }: ProjectProps) => {
       <Image
         src={image}
         alt={"Project Photo"}
-        className="absolute top-8 -right-40 w-[30rem] rounded-t-lg shadow-2xl group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 transition group-even:-right-[initial] group-even:-left-40 h-full object-cover"
+        className="absolute top-8 -right-40 w-[30rem] rounded-t-lg shadow-2xl group-hover:scale-105 group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 transition group-even:-right-[initial] group-even:-left-40 h-full object-cover group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 "
       />
     </section>
   );
