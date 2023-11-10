@@ -1,5 +1,3 @@
-"use client";
-
 interface SectionTitleProps {
   children: React.ReactNode;
 }

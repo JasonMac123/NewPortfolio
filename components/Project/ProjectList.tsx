@@ -1,5 +1,3 @@
-"use client";
-
 import SectionTitle from "../SectionTitle";
 import AniSharePhoto from "/public/images/AniShare.jpg";
 import AnimalPalPhoto from "/public/images/AnimalPal.jpg";
@@ -35,7 +33,7 @@ const ProjectList = () => {
     <section>
       <SectionTitle>My Projects</SectionTitle>
       <div>
-        {projectData.map((project, i) => {
+        {projectData.map((project) => {
           return <Project key={project.title} {...project} />;
         })}
       </div>
