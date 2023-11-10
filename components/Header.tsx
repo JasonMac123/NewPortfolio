@@ -1,9 +1,9 @@
 "use client";
 
+import { UseActiveSectionContext } from "@/context/activeSectionContext";
+
 import { motion } from "framer-motion";
 import Link from "next/link";
-
-import { useState } from "react";
 
 export const links = [
   {
@@ -33,7 +33,7 @@ export const links = [
 ];
 
 const Header = () => {
-  const [activeSection, setSection] = useState("Home");
+  const { activeSection, setActiveSection } = UseActiveSectionContext();
 
   return (
     <header className="z-50 relative">
@@ -56,7 +56,7 @@ const Header = () => {
                   activeSection === link.name ? "text-gray-950" : ""
                 }`}
                 href={link.section}
-                onClick={() => setSection(link.name)}
+                onClick={() => setActiveSection(link.name)}
               >
                 {link.name}
                 {link.name === activeSection && (
