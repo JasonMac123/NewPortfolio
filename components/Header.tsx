@@ -33,7 +33,7 @@ export const links = [
 ];
 
 const Header = () => {
-  const [section, setSection] = useState("Home");
+  const [activeSection, setSection] = useState("Home");
 
   return (
     <header className="z-50 relative">
@@ -53,16 +53,16 @@ const Header = () => {
             >
               <Link
                 className={`flex w-full items-center justify-center px-3 py-1 hover:text-gray-800 transition ${
-                  section === link.name ? "text-gray-950" : ""
+                  activeSection === link.name ? "text-gray-950" : ""
                 }`}
                 href={link.section}
                 onClick={() => setSection(link.name)}
               >
                 {link.name}
-                {link.name === section && (
+                {link.name === activeSection && (
                   <motion.span
-                    className="bg-gray-100 rounded-full absolute inset-0 p-4 -z-10"
-                    layoutId="section"
+                    className="bg-gray-200 rounded-full absolute inset-0 pt-4 p-2 -z-10"
+                    layoutId="activeSection"
                     transition={{
                       type: "string",
                       stiffness: 300,
