@@ -60,7 +60,15 @@ const Header = () => {
               >
                 {link.name}
                 {link.name === section && (
-                  <span className="bg-gray-100 rounded-full absolute inset-0 p-4 -z-10"></span>
+                  <motion.span
+                    className="bg-gray-100 rounded-full absolute inset-0 p-4 -z-10"
+                    layoutId="section"
+                    transition={{
+                      type: "string",
+                      stiffness: 300,
+                      damping: 30,
+                    }}
+                  ></motion.span>
                 )}
               </Link>
             </motion.li>
