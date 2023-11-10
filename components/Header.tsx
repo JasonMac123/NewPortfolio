@@ -60,7 +60,7 @@ const Header = () => {
               >
                 {link.name}
                 {link.name === section && (
-                  <span className="bg-gray-100 rounded-full absolute inset-0 -z-10"></span>
+                  <span className="bg-gray-100 rounded-full absolute inset-0 p-4 -z-10"></span>
                 )}
               </Link>
             </motion.li>
