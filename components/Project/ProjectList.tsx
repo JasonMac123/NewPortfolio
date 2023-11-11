@@ -6,9 +6,7 @@ import AnimalPalPhoto from "/public/images/AnimalPal.jpg";
 import LookOfJapanPhoto from "/public/images/LookOfJapan.jpg";
 import Project from "./Project";
 
-import { UseActiveSectionContext } from "@/context/activeSectionContext";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { useSectionInView } from "@/hooks/useSectionInView";
 
 export const projectData = [
   {
@@ -38,17 +36,7 @@ export const projectData = [
 ];
 
 const ProjectList = () => {
-  const { setActiveSection, lastClickTime } = UseActiveSectionContext();
-
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-  });
-
-  useEffect(() => {
-    if (inView && Date.now() - lastClickTime > 1000) {
-      setActiveSection("Project");
-    }
-  }, [inView, setActiveSection, lastClickTime]);
+  const { ref } = useSectionInView("Project", 0.5);
 
   return (
     <section id="projects" className="scroll-mt-28" ref={ref}>
