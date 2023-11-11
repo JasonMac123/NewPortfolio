@@ -33,7 +33,8 @@ export const links = [
 ];
 
 const Header = () => {
-  const { activeSection, setActiveSection } = UseActiveSectionContext();
+  const { activeSection, setActiveSection, setLastClickTime } =
+    UseActiveSectionContext();
 
   return (
     <header className="z-50 relative">
@@ -56,7 +57,10 @@ const Header = () => {
                   activeSection === link.name ? "text-gray-950" : ""
                 }`}
                 href={link.section}
-                onClick={() => setActiveSection(link.name)}
+                onClick={() => {
+                  setActiveSection(link.name);
+                  setLastClickTime(Date.now());
+                }}
               >
                 {link.name}
                 {link.name === activeSection && (

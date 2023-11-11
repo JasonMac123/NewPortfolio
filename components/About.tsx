@@ -8,17 +8,17 @@ import { UseActiveSectionContext } from "@/context/activeSectionContext";
 import { useEffect } from "react";
 
 const About = () => {
-  const { setActiveSection } = UseActiveSectionContext();
+  const { setActiveSection, lastClickTime } = UseActiveSectionContext();
 
   const { ref, inView } = useInView({
     threshold: 0.7,
   });
 
   useEffect(() => {
-    if (inView) {
+    if (inView && Date.now() - lastClickTime > 1000) {
       setActiveSection("About");
     }
-  }, [inView, setActiveSection]);
+  }, [inView, setActiveSection, lastClickTime]);
 
   return (
     <motion.section

@@ -38,17 +38,17 @@ export const projectData = [
 ];
 
 const ProjectList = () => {
-  const { setActiveSection } = UseActiveSectionContext();
+  const { setActiveSection, lastClickTime } = UseActiveSectionContext();
 
   const { ref, inView } = useInView({
     threshold: 0.7,
   });
 
   useEffect(() => {
-    if (inView) {
+    if (inView && Date.now() - lastClickTime > 1000) {
       setActiveSection("Project");
     }
-  }, [inView, setActiveSection]);
+  }, [inView, setActiveSection, lastClickTime]);
 
   return (
     <section id="projects" className="scroll-mt-28" ref={ref}>
