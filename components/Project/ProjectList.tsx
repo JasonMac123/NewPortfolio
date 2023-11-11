@@ -1,8 +1,14 @@
+"use client";
+
 import SectionTitle from "../SectionTitle";
 import AniSharePhoto from "/public/images/AniShare.jpg";
 import AnimalPalPhoto from "/public/images/AnimalPal.jpg";
 import LookOfJapanPhoto from "/public/images/LookOfJapan.jpg";
 import Project from "./Project";
+
+import { UseActiveSectionContext } from "@/context/activeSectionContext";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 export const projectData = [
   {
@@ -32,8 +38,18 @@ export const projectData = [
 ];
 
 const ProjectList = () => {
+  const { setActiveSection } = UseActiveSectionContext();
+
+  const { ref, inView } = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("Project");
+    }
+  }, [inView, setActiveSection]);
+
   return (
-    <section id="projects" className="scroll-mt-28">
+    <section id="projects" className="scroll-mt-28" ref={ref}>
       <SectionTitle>My Projects</SectionTitle>
       <div>
         {projectData.map((project) => {
