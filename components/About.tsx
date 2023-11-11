@@ -11,7 +11,7 @@ const About = () => {
   const { setActiveSection } = UseActiveSectionContext();
 
   const { ref, inView } = useInView({
-    threshold: 0.6,
+    threshold: 0.7,
   });
 
   useEffect(() => {
