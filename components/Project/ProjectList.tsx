@@ -41,7 +41,7 @@ const ProjectList = () => {
   const { setActiveSection, lastClickTime } = UseActiveSectionContext();
 
   const { ref, inView } = useInView({
-    threshold: 0.7,
+    threshold: 0.5,
   });
 
   useEffect(() => {
