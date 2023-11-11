@@ -8,6 +8,8 @@ interface ActiveSectionContextProviderProps {
 type ActiveSectionContextType = {
   activeSection: string;
   setActiveSection: React.Dispatch<React.SetStateAction<string>>;
+  lastClickTime: number;
+  setLastClickTime: React.Dispatch<React.SetStateAction<number>>;
 };
 
 const ActiveSectionContext = createContext<ActiveSectionContextType | null>(
@@ -18,12 +20,15 @@ const ActiveSectionContextProvider = ({
   children,
 }: ActiveSectionContextProviderProps) => {
   const [activeSection, setActiveSection] = useState("Home");
+  const [lastClickTime, setLastClickTime] = useState(0);
 
   return (
     <ActiveSectionContext.Provider
       value={{
         activeSection,
         setActiveSection,
+        lastClickTime,
+        setLastClickTime,
       }}
     >
       {children}
