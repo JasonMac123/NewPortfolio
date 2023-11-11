@@ -9,6 +9,12 @@ const Skills = () => {
   return (
     <section>
       <SectionTitle>Skills</SectionTitle>
+      <div>
+        <h3>Front-end</h3>
+      </div>
+      <div>
+        <h3> Back-end</h3>
+      </div>
     </section>
   );
 };
