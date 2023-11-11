@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Profile from "@/components/Profile";
 import ProjectList from "@/components/Project/ProjectList";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Profile />
       <About />
       <ProjectList />
+      <Skills />
     </main>
   );
 }
