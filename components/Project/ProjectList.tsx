@@ -40,7 +40,9 @@ export const projectData = [
 const ProjectList = () => {
   const { setActiveSection } = UseActiveSectionContext();
 
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    threshold: 0.6,
+  });
 
   useEffect(() => {
     if (inView) {
