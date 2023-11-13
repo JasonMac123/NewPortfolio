@@ -1,5 +1,11 @@
 "use client";
 
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+
 import { GiMicroscope } from "react-icons/gi";
 import { BsCodeSlash } from "react-icons/bs";
 
@@ -32,6 +38,11 @@ const Experience = () => {
   return (
     <section id="experience" ref={ref}>
       <SectionTitle>Experience</SectionTitle>
+      <VerticalTimeline>
+        <VerticalTimelineElement visible>
+          <h3>Hello</h3>
+        </VerticalTimelineElement>
+      </VerticalTimeline>
     </section>
   );
 };
