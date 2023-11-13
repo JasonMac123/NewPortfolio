@@ -31,16 +31,22 @@ const Skills = () => {
   const { ref } = useSectionInView("Skills", 0.3);
 
   return (
-    <section
+    <motion.section
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{ opacity: 1, scale: 1 }}
       id="skills"
       ref={ref}
       className="mt-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
       <SectionTitle>Skills</SectionTitle>
       <div>
-        <h3 className="text-xl font-medium capitalize mb-8 text-center">
+        <motion.h3
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          className="text-xl font-medium capitalize mb-8 text-center"
+        >
           Front-end
-        </h3>
+        </motion.h3>
         <ul className="mb-8 flex flex-wrap justify-center gap-2 text-lg text-gray-800">
           {skillsData.frontEnd.map((skill, i) => {
             return (
@@ -64,9 +70,13 @@ const Skills = () => {
         </ul>
       </div>
       <div>
-        <h3 className="text-xl font-medium capitalize mb-8 text-center">
+        <motion.h3
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          className="text-xl font-medium capitalize mb-8 text-center"
+        >
           Back-end
-        </h3>
+        </motion.h3>
         <ul className="mb-8 flex flex-wrap justify-center gap-2 text-lg text-gray-800">
           {skillsData.backEnd.map((skill, i) => {
             return (
@@ -89,7 +99,7 @@ const Skills = () => {
           })}
         </ul>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
