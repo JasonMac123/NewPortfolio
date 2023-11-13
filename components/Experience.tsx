@@ -56,10 +56,16 @@ const Experience = () => {
               }}
               date={item.date}
               icon={<item.icon />}
+              iconStyle={{
+                background: "white",
+                fontSize: "1.5rem",
+              }}
             >
-              <h3>{item.title}</h3>
-              <p>{item.company}</p>
-              <p>{item.description}</p>
+              <h3 className="font-semibold capitalize">{item.title}</h3>
+              <p className="font-normal !mt-0">{item.company}</p>
+              <p className="!mt-1 !font-normal text-gray-800">
+                {item.description}
+              </p>
             </VerticalTimelineElement>
           );
         })}
