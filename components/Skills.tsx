@@ -39,9 +39,16 @@ const Skills = () => {
         <h3 className="text-xl font-medium capitalize mb-8 text-center">
           Front-end
         </h3>
-        <ul className="flex flex-wrap justify-center gap-3 text-lg text-gray-800">
+        <ul className="mb-8 flex flex-wrap justify-center gap-3 text-lg text-gray-800">
           {skillsData.frontEnd.map((skill, i) => {
-            return <li key={i}>{skill}</li>;
+            return (
+              <li
+                className="bg-white border-black/[0.2] rounded-xl px-4 py-2"
+                key={i}
+              >
+                {skill}
+              </li>
+            );
           })}
         </ul>
       </div>
@@ -49,9 +56,16 @@ const Skills = () => {
         <h3 className="text-xl font-medium capitalize mb-8 text-center">
           Back-end
         </h3>
-        <ul className="flex flex-wrap justify-center gap-3 text-lg text-gray-800">
+        <ul className="mb-8 flex flex-wrap justify-center gap-3 text-lg text-gray-800">
           {skillsData.backEnd.map((skill, i) => {
-            return <li key={i}>{skill}</li>;
+            return (
+              <li
+                className="bg-white border-black/[0.2] rounded-xl px-4 py-2"
+                key={i}
+              >
+                {skill}
+              </li>
+            );
           })}
         </ul>
       </div>
