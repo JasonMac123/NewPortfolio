@@ -11,7 +11,8 @@ import { BsCodeSlash } from "react-icons/bs";
 
 import { useSectionInView } from "@/hooks/useSectionInView";
 import SectionTitle from "./SectionTitle";
-import React from "react";
+
+import { motion } from "framer-motion";
 
 const experienceData = [
   {
@@ -36,7 +37,13 @@ const Experience = () => {
   const { ref } = useSectionInView("Experience", 0.5);
 
   return (
-    <section id="experience" ref={ref}>
+    <motion.section
+      id="experience"
+      ref={ref}
+      className="mb-40"
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{ opacity: 1, scale: 1 }}
+    >
       <SectionTitle>Experience</SectionTitle>
       <VerticalTimeline lineColor="" animate>
         {experienceData.map((item, i) => {
@@ -72,7 +79,7 @@ const Experience = () => {
           );
         })}
       </VerticalTimeline>
-    </section>
+    </motion.section>
   );
 };
 
