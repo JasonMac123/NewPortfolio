@@ -39,9 +39,15 @@ const Experience = () => {
     <section id="experience" ref={ref}>
       <SectionTitle>Experience</SectionTitle>
       <VerticalTimeline>
-        <VerticalTimelineElement visible>
-          <h3>Hello</h3>
-        </VerticalTimelineElement>
+        {experienceData.map((item, i) => {
+          return (
+            <VerticalTimelineElement visible key={i}>
+              <h3>{item.title}</h3>
+              <p>{item.company}</p>
+              <p>{item.description}</p>
+            </VerticalTimelineElement>
+          );
+        })}
       </VerticalTimeline>
     </section>
   );
