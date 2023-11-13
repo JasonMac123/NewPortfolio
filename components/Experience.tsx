@@ -1,15 +1,11 @@
 "use client";
 
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-
 import { GiMicroscope } from "react-icons/gi";
 import { BsCodeSlash } from "react-icons/bs";
 
 import { useSectionInView } from "@/hooks/useSectionInView";
 import SectionTitle from "./SectionTitle";
+import React from "react";
 
 const experienceData = [
   {
@@ -36,17 +32,6 @@ const Experience = () => {
   return (
     <section id="experience" ref={ref}>
       <SectionTitle>Experience</SectionTitle>
-      <VerticalTimeline>
-        {experienceData.map((experience, i) => {
-          return (
-            <VerticalTimelineElement key={i}>
-              <h3>{experience.title}</h3>
-              <p>{experience.company}</p>
-              <p>{experience.description}</p>
-            </VerticalTimelineElement>
-          );
-        })}
-      </VerticalTimeline>
     </section>
   );
 };
