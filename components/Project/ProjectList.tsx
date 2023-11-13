@@ -36,7 +36,7 @@ export const projectData = [
 ];
 
 const ProjectList = () => {
-  const { ref } = useSectionInView("Project", 0.3);
+  const { ref } = useSectionInView("Projects", 0.3);
 
   return (
     <section id="projects" className="scroll-mt-28 mb-14" ref={ref}>
