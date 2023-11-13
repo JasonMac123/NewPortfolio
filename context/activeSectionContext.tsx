@@ -1,4 +1,5 @@
-import { type } from "os";
+"use client";
+
 import { createContext, useContext, useState } from "react";
 
 interface ActiveSectionContextProviderProps {
