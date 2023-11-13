@@ -38,7 +38,7 @@ const Experience = () => {
   return (
     <section id="experience" ref={ref}>
       <SectionTitle>Experience</SectionTitle>
-      <VerticalTimeline>
+      <VerticalTimeline lineColor="" animate>
         {experienceData.map((item, i) => {
           return (
             <VerticalTimelineElement
@@ -55,9 +55,11 @@ const Experience = () => {
                 borderRight: "0.4rem solid #9ca3af",
               }}
               date={item.date}
+              dateClassName="dateTimeline"
               icon={<item.icon />}
               iconStyle={{
-                background: "white",
+                background: "gray",
+                color: "white",
                 fontSize: "1.5rem",
               }}
             >
