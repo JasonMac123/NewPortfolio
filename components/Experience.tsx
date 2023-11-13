@@ -41,7 +41,22 @@ const Experience = () => {
       <VerticalTimeline>
         {experienceData.map((item, i) => {
           return (
-            <VerticalTimelineElement visible key={i}>
+            <VerticalTimelineElement
+              visible
+              key={i}
+              contentStyle={{
+                background: "#f3f4f6",
+                boxShadow: "none",
+                border: "1px solid rgba(0, 0, 0, 0.5)",
+                textAlign: "left",
+                padding: "1.3rem 2rem",
+              }}
+              contentArrowStyle={{
+                borderRight: "0.4rem solid #9ca3af",
+              }}
+              date={item.date}
+              icon={<item.icon />}
+            >
               <h3>{item.title}</h3>
               <p>{item.company}</p>
               <p>{item.description}</p>
