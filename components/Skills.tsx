@@ -29,7 +29,7 @@ const Skills = () => {
   const { ref } = useSectionInView("Skills", 0.3);
 
   return (
-    <section id="skills" ref={ref}>
+    <section id="skills" ref={ref} className="mt-28">
       <SectionTitle>Skills</SectionTitle>
       <div>
         <h3 className="text-xl font-medium capitalize mb-8 text-center">
