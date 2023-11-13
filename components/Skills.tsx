@@ -1,5 +1,7 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 import { useSectionInView } from "@/hooks/useSectionInView";
 import SectionTitle from "./SectionTitle";
 
@@ -42,12 +44,21 @@ const Skills = () => {
         <ul className="mb-8 flex flex-wrap justify-center gap-2 text-lg text-gray-800">
           {skillsData.frontEnd.map((skill, i) => {
             return (
-              <li
+              <motion.li
                 className="bg-white border border-black/[0.2] rounded-xl px-4 py-2"
                 key={i}
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  delay: 0.05 * i,
+                }}
+                whileInView="animate"
+                viewport={{
+                  once: true,
+                }}
               >
                 {skill}
-              </li>
+              </motion.li>
             );
           })}
         </ul>
@@ -59,12 +70,21 @@ const Skills = () => {
         <ul className="mb-8 flex flex-wrap justify-center gap-2 text-lg text-gray-800">
           {skillsData.backEnd.map((skill, i) => {
             return (
-              <li
+              <motion.li
                 className="bg-white border border-black/[0.2] rounded-xl px-4 py-2"
                 key={i}
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  delay: 0.05 * i,
+                }}
+                whileInView="animate"
+                viewport={{
+                  once: true,
+                }}
               >
                 {skill}
-              </li>
+              </motion.li>
             );
           })}
         </ul>
