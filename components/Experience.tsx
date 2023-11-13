@@ -40,7 +40,7 @@ const Experience = () => {
     <motion.section
       id="experience"
       ref={ref}
-      className="mb-40"
+      className="mb-28 scroll-mt-28 sm:mb-40"
       initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: 1, scale: 1 }}
     >
