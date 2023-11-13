@@ -29,13 +29,17 @@ const Skills = () => {
   const { ref } = useSectionInView("Skills", 0.3);
 
   return (
-    <section id="skills" ref={ref} className="mt-28">
+    <section
+      id="skills"
+      ref={ref}
+      className="mt-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+    >
       <SectionTitle>Skills</SectionTitle>
       <div>
         <h3 className="text-xl font-medium capitalize mb-8 text-center">
           Front-end
         </h3>
-        <ul>
+        <ul className="flex flex-wrap justify-center gap-3 text-lg text-gray-800">
           {skillsData.frontEnd.map((skill, i) => {
             return <li key={i}>{skill}</li>;
           })}
@@ -43,10 +47,9 @@ const Skills = () => {
       </div>
       <div>
         <h3 className="text-xl font-medium capitalize mb-8 text-center">
-          {" "}
           Back-end
         </h3>
-        <ul>
+        <ul className="flex flex-wrap justify-center gap-3 text-lg text-gray-800">
           {skillsData.backEnd.map((skill, i) => {
             return <li key={i}>{skill}</li>;
           })}
