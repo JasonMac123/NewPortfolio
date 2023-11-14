@@ -12,22 +12,26 @@ const Contact = () => {
     <section
       id="contact"
       ref={ref}
-      className="mb-28 sm:mb-40 scroll-mt-28 w-[min(95%, 38rem)]"
+      className="mb-28 sm:mb-40 scroll-mt-28 w-[min(95%, 38rem)] text-center"
     >
       <SectionTitle>Contact Me</SectionTitle>
-      <p className="text-gray-700">
+      <p className="text-gray-700 -mt-4">
         Please contact me at{" "}
         <a href="mailto:m.jason.2018@gmail.com" className="underline">
           my email
         </a>{" "}
         or through this form
       </p>
-      <form action="POST" className="mt-10 flex flex-col">
+      <form action="POST" className="mt-10 flex flex-col px-4">
         <input
           type="email"
           className="h-14 rounded-lg border border-black/10"
+          placeholder="Your email"
         />
-        <textarea className="h-52 my-3 rounded-lg border border-black/10 p-4 resize-none"></textarea>
+        <textarea
+          className="h-52 my-3 rounded-lg border border-black/10 p-4 resize-none"
+          placeholder="Your message"
+        ></textarea>
         <button
           type="submit"
           className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:bg-gray-950 hover:scale-110 active:scale-105"
