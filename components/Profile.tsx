@@ -12,9 +12,12 @@ import {
 } from "react-icons/ai";
 import Link from "next/link";
 import { useSectionInView } from "@/hooks/useSectionInView";
+import { UseActiveSectionContext } from "@/context/activeSectionContext";
 
 const Profile = () => {
   const { ref } = useSectionInView("Home", 0.5);
+
+  const { setActiveSection, setLastClickTime } = UseActiveSectionContext();
 
   return (
     <>
@@ -53,6 +56,10 @@ const Profile = () => {
           <Link
             href="#contact"
             className="group bg-neutral-800 px-7 text-white py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer"
+            onClick={() => {
+              setActiveSection("Contact");
+              setLastClickTime(Date.now());
+            }}
           >
             Contact Me{" "}
             <AiFillContacts
