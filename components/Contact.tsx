@@ -20,14 +20,17 @@ const Contact = () => {
         </a>{" "}
         or through this form
       </p>
-      <form action="POST" className="mt-10">
+      <form action="POST" className="mt-10 flex flex-col">
         <input
           type="email"
           className="h-14 rounded-lg border border-black/10"
         />
-        <textarea className="h-52 my-3 rounded-lg border border-black/10"></textarea>
-        <button type="submit">
-          Submit <IoMdSend />
+        <textarea className="h-52 my-3 rounded-lg border border-black/10 p-4 resize-none"></textarea>
+        <button
+          type="submit"
+          className="flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all"
+        >
+          Submit <IoMdSend className="text-sm opacity-70 transition-all" />
         </button>
       </form>
     </section>
