@@ -36,11 +36,15 @@ const Contact = () => {
       <form action="POST" className="mt-10 flex flex-col px-4">
         <input
           type="email"
+          required
+          maxLength={500}
           className="h-14 rounded-lg border border-black/10"
           placeholder="Your email"
         />
         <textarea
           className="h-52 my-3 rounded-lg border border-black/10 p-4 resize-none"
+          required
+          maxLength={500}
           placeholder="Your message"
         ></textarea>
         <button
