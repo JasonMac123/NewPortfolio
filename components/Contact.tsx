@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { useSectionInView } from "@/hooks/useSectionInView";
 
 import { IoMdSend } from "react-icons/io";
@@ -9,10 +10,20 @@ const Contact = () => {
   const { ref } = useSectionInView("Contact", 0.5);
 
   return (
-    <section
+    <motion.section
       id="contact"
       ref={ref}
       className="mb-28 sm:mb-40 scroll-mt-28 w-[min(95%, 38rem)] text-center"
+      initial={{
+        opacity: 0,
+      }}
+      whileInView={{
+        opacity: 1,
+      }}
+      transition={{
+        duration: 1.5,
+      }}
+      viewport={{ once: true }}
     >
       <SectionTitle>Contact Me</SectionTitle>
       <p className="text-gray-700 -mt-4">
@@ -40,7 +51,7 @@ const Contact = () => {
           <IoMdSend className="text-sm opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
         </button>
       </form>
-    </section>
+    </motion.section>
   );
 };
 
