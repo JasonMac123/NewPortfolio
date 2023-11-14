@@ -3,6 +3,7 @@
 import { useSectionInView } from "@/hooks/useSectionInView";
 
 import { IoMdSend } from "react-icons/io";
+import SectionTitle from "./SectionTitle";
 
 const Contact = () => {
   const { ref } = useSectionInView("Contact", 0.5);
@@ -13,6 +14,7 @@ const Contact = () => {
       ref={ref}
       className="mb-28 sm:mb-40 scroll-mt-28 w-[min(95%, 38rem)]"
     >
+      <SectionTitle>Contact Me</SectionTitle>
       <p className="text-gray-700">
         Please contact me at{" "}
         <a href="mailto:m.jason.2018@gmail.com" className="underline">
