@@ -9,6 +9,10 @@ import SectionTitle from "./SectionTitle";
 const Contact = () => {
   const { ref } = useSectionInView("Contact", 0.5);
 
+  const sendMessage = async (formData: FormData) => {
+    "use server";
+  };
+
   return (
     <motion.section
       id="contact"
@@ -33,9 +37,15 @@ const Contact = () => {
         </a>{" "}
         or through this form
       </p>
-      <form action="POST" className="mt-10 flex flex-col px-4">
+      <form
+        action={(formData) => {
+          sendMessage(formData);
+        }}
+        className="mt-10 flex flex-col px-4"
+      >
         <input
           type="email"
+          name="senderEmail"
           required
           maxLength={500}
           className="h-14 rounded-lg border border-black/10"
@@ -43,6 +53,7 @@ const Contact = () => {
         />
         <textarea
           className="h-52 my-3 rounded-lg border border-black/10 p-4 resize-none"
+          name="message"
           required
           maxLength={500}
           placeholder="Your message"
