@@ -3,15 +3,13 @@
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/hooks/useSectionInView";
 
+import sendMessage from "@/functions/sendMessage";
+
 import { IoMdSend } from "react-icons/io";
 import SectionTitle from "./SectionTitle";
 
 const Contact = () => {
   const { ref } = useSectionInView("Contact", 0.5);
-
-  const sendMessage = async (formData: FormData) => {
-    "use server";
-  };
 
   return (
     <motion.section
@@ -38,8 +36,8 @@ const Contact = () => {
         or through this form
       </p>
       <form
-        action={(formData) => {
-          sendMessage(formData);
+        action={async (formData) => {
+          await sendMessage(formData);
         }}
         className="mt-10 flex flex-col px-4"
       >
