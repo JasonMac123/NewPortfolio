@@ -8,6 +8,8 @@ import sendMessage from "@/functions/sendMessage";
 import { IoMdSend } from "react-icons/io";
 
 import SectionTitle from "../SectionTitle";
+import { useFormState } from "react-dom";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const { ref } = useSectionInView("Contact", 0.5);
@@ -38,7 +40,12 @@ const Contact = () => {
       </p>
       <form
         action={async (formData) => {
-          await sendMessage(formData);
+          const result = await sendMessage(formData);
+          if (result === "Successful") {
+            toast("Message sent");
+          } else {
+            toast("Something went wrong");
+          }
         }}
         className="mt-10 flex flex-col"
       >

@@ -33,6 +33,7 @@ const sendMessage = async (formData: FormData) => {
       reply_to: senderEmail,
       react: <ContactFormEmail message={message} email={senderEmail} />,
     });
+    return "Successful";
   } catch (e: any) {
     return {
       error: e.message,
