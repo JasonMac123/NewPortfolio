@@ -43,7 +43,7 @@ const Contact = () => {
       >
         <input
           type="email"
-          name="senderEmail"
+          name="email"
           required
           maxLength={500}
           className="h-14 px-4 rounded-lg border border-black/10"
