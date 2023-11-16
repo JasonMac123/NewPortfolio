@@ -33,7 +33,7 @@ const sendMessage = async (formData: FormData) => {
       reply_to: senderEmail,
     });
   } catch (e: any) {
-    throw new Error(e);
+    console.log(e);
   }
 };
 
