@@ -24,13 +24,17 @@ const sendMessage = async (formData: FormData) => {
     };
   }
 
-  resend.emails.send({
-    from: "onboarding@resend.dev",
-    to: "m.jason.2018@gmail.com",
-    subject: "Contact Form - Portfolio",
-    text: message,
-    reply_to: senderEmail,
-  });
+  try {
+    resend.emails.send({
+      from: "onboarding@resend.dev",
+      to: "m.jason.2018@gmail.com",
+      subject: "Contact Form - Portfolio",
+      text: message,
+      reply_to: senderEmail,
+    });
+  } catch (e: any) {
+    throw new Error(e);
+  }
 };
 
 export default sendMessage;
