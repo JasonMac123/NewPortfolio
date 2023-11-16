@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import ProfileDescription from "./ProfileDescription";
-import JasonPhoto from "../public/images/JasonPhoto.jpg";
+import JasonPhoto from "../../public/images/JasonPhoto.jpg";
 
 import { motion } from "framer-motion";
 import {
