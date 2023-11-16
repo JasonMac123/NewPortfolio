@@ -26,7 +26,7 @@ const sendMessage = async (formData: FormData) => {
 
   try {
     resend.emails.send({
-      from: "onboarding@resend.dev",
+      from: "Portfolio Contact Form - <onboarding@resend.dev>",
       to: "m.jason.2018@gmail.com",
       subject: "Contact Form - Portfolio",
       text: message,
