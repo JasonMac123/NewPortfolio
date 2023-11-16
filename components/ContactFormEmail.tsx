@@ -28,10 +28,10 @@ const ContactFormEmail: React.FC<ContactFormEmailProps> = ({
       <Head />
       <Preview>New message from Portfolio</Preview>
       <Tailwind>
-        <Body>
+        <Body className="bg-gray-100 text-black">
           <Container>
-            <Section>
-              <Heading>You got a message!</Heading>
+            <Section className="bg-white border border-black/10 my-10 px-10 py-4 rounded-md">
+              <Heading className="leading-tight">You got a message!</Heading>
               <Text>{message}</Text>
               <Hr /> <Text>The Sender is: {email}</Text>
             </Section>
