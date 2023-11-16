@@ -43,6 +43,8 @@ const Contact = () => {
           const result = await sendMessage(formData);
           if (result === "Successful") {
             toast("Message sent");
+            formData.set("email", "");
+            formData.set("message", "");
           } else {
             toast("Something went wrong");
           }
