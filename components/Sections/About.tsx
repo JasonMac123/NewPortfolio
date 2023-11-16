@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-import SectionTitle from "./SectionTitle";
+import SectionTitle from "../SectionTitle";
 import { useSectionInView } from "@/hooks/useSectionInView";
 
 const About = () => {

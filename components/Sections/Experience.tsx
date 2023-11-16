@@ -10,7 +10,7 @@ import { GiMicroscope } from "react-icons/gi";
 import { BsCodeSlash } from "react-icons/bs";
 
 import { useSectionInView } from "@/hooks/useSectionInView";
-import SectionTitle from "./SectionTitle";
+import SectionTitle from "../SectionTitle";
 
 import { motion } from "framer-motion";
 

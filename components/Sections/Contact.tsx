@@ -6,7 +6,8 @@ import { useSectionInView } from "@/hooks/useSectionInView";
 import sendMessage from "@/functions/sendMessage";
 
 import { IoMdSend } from "react-icons/io";
-import SectionTitle from "./SectionTitle";
+
+import SectionTitle from "../SectionTitle";
 
 const Contact = () => {
   const { ref } = useSectionInView("Contact", 0.5);

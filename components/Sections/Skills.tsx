@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 import { useSectionInView } from "@/hooks/useSectionInView";
-import SectionTitle from "./SectionTitle";
+import SectionTitle from "../SectionTitle";
 
 export const skillsData = {
   frontEnd: [

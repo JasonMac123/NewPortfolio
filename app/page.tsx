@@ -1,9 +1,9 @@
-import About from "@/components/About";
-import Contact from "@/components/Contact";
-import Experience from "@/components/Experience";
-import Profile from "@/components/Profile";
 import ProjectList from "@/components/Project/ProjectList";
-import Skills from "@/components/Skills";
+import About from "@/components/Sections/About";
+import Contact from "@/components/Sections/Contact";
+import Experience from "@/components/Sections/Experience";
+import Profile from "@/components/Sections/Profile";
+import Skills from "@/components/Sections/Skills";
 
 export default function Home() {
   return (
