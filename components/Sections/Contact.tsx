@@ -17,7 +17,7 @@ const Contact = () => {
     <motion.section
       id="contact"
       ref={ref}
-      className="bg-[#DAEDBD] w-full py-8 px-12 scroll-mt-28 text-center"
+      className="bg-[#c5d7ee] w-full py-8 px-12 scroll-mt-28 text-center"
       initial={{
         opacity: 0,
       }}
