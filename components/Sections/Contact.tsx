@@ -17,7 +17,7 @@ const Contact = () => {
     <motion.section
       id="contact"
       ref={ref}
-      className="bg-[#CAF0F8] w-full py-8 px-12 scroll-mt-28 text-center"
+      className="bg-[#e0edff] w-full py-8 px-12 scroll-mt-28 text-center"
       initial={{
         opacity: 0,
       }}
@@ -66,7 +66,7 @@ const Contact = () => {
           ></textarea>
           <button
             type="submit"
-            className="self-end group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-[#48CAE4] text-white rounded-full outline-none transition-all focus:scale-110 hhover:bg-[#00B4D8] hover:scale-110 active:scale-105"
+            className="self-end group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-[#0077B6] text-white rounded-full outline-none transition-all focus:scale-110 hover:bg-[#023E8A] hover:scale-110 active:scale-105"
           >
             Submit{" "}
             <IoMdSend className="text-sm opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
