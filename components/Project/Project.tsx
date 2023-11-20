@@ -38,7 +38,7 @@ const Project = ({ title, description, tags, image, link }: ProjectProps) => {
         onClick={redirectToProject}
       >
         <div className="pt-4 pb-8 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:w-1/2 flex flex-col h-full group-even:ml-[21rem]">
-          <h3 className="text-2xl font-semibold">{title}</h3>
+          <h3 className="text-2xl font-semibold text-[#0077b6]">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, i) => {

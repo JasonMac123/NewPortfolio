@@ -9,12 +9,14 @@ const ProfileDescription = () => {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
     >
-      <span className="font-bold">
+      <span className="font-bold text-[#0077b6]">
         Hey I&lsquo;m Jason, a full-stack developer
       </span>{" "}
       marking my journery into web development. My expertise is in{" "}
-      <span className="font-bold">typescript, javascript, react, </span> next,
-      and
+      <span className="font-bold text-[#0077b6]">
+        typescript, javascript, react,{" "}
+      </span>{" "}
+      next, and
       <span className="italic"> building web applications</span>.
     </motion.p>
   );
