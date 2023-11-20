@@ -52,7 +52,7 @@ const Header = () => {
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
             >
-              <Link
+              <a
                 className={`flex w-full items-center justify-center px-3 py-1 hover:text-gray-800 transition ${
                   activeSection === link.name ? "text-gray-950" : ""
                 }`}
@@ -74,7 +74,7 @@ const Header = () => {
                     }}
                   ></motion.span>
                 )}
-              </Link>
+              </a>
             </motion.li>
           ))}
         </ul>
