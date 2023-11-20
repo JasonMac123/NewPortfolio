@@ -44,7 +44,7 @@ const Project = ({ title, description, tags, image, link }: ProjectProps) => {
             {tags.map((tag, i) => {
               return (
                 <li
-                  className="bg-black/[0.7] px-3 py-2 text-[0.5rem] uppercase tracking-wider text-white rounded-3xl"
+                  className="bg-[#48CAE4]/[0.7] px-3 py-2 text-[0.5rem] uppercase tracking-wider text-black rounded-3xl"
                   key={i}
                 >
                   {tag}

@@ -55,7 +55,7 @@ const Profile = () => {
         >
           <Link
             href="#contact"
-            className="group bg-neutral-800 px-7 text-white py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer"
+            className="group bg-[#48CAE4] px-7 text-white py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-[#00B4D8] active:scale-105 transition cursor-pointer"
             onClick={() => {
               setActiveSection("Contact");
               setLastClickTime(Date.now());
