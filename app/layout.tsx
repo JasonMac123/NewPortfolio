@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 
 import Header from "@/components/Header";
 import ActiveSectionContextProvider from "@/context/activeSectionContext";
@@ -7,7 +7,12 @@ import ActiveSectionContextProvider from "@/context/activeSectionContext";
 import { Toaster } from "react-hot-toast";
 import Footer from "@/components/Sections/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Roboto({
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Jason Mac | Web Developer",
