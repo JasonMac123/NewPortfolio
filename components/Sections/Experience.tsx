@@ -65,7 +65,7 @@ const Experience = () => {
               dateClassName="dateTimeline"
               icon={<item.icon />}
               iconStyle={{
-                background: "gray",
+                background: "rgb(144, 194, 228)",
                 color: "white",
                 fontSize: "1.5rem",
               }}
