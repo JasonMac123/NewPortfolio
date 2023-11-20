@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  --line-color: #90e0ef;
+  --line-color: #0077b6;
 }
 
 .dateTimeline {
