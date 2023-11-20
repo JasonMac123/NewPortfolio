@@ -49,7 +49,6 @@ const Experience = () => {
         {experienceData.map((item, i) => {
           return (
             <VerticalTimelineElement
-              visible
               key={i}
               contentStyle={{
                 background: "#f3f4f6",
